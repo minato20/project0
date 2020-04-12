@@ -127,4 +127,13 @@ body {
   color: #7272b3;
 }
 
+#btns .btn {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#contact {
+  color: white;
+}
+
 /*# sourceMappingURL=main.css.map */
