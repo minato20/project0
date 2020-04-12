@@ -4,7 +4,7 @@
     width: 100px;
 }
 %network{
-  font-size: 15px;
+    font-size: 30px;
 }
 %baselink{
     text-decoration: none;
@@ -61,7 +61,6 @@ body{
 #nav-4{
     grid-area: "nav-4";
 }
-
 #profile{
     background: #0c0d0c;
     display: flex;
@@ -92,8 +91,8 @@ body{
     margin:10px;
 }
 .slink{
+    @extend %network;
     color: grey;
-    font-size: 30px;
 }
 .link{
     @extend %baselink;
@@ -105,10 +104,6 @@ body{
 .link:active{
     @extend %baselink;
     color: grey;
-}
-#facebook{
-    @extend %network;
-    color:red;
 }
 // NAV
 .nav-card{
