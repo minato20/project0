@@ -8,6 +8,11 @@
   font-size: 15px;
 }
 
+.link:active, .link:hover, .link {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   background: #151716;
   font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +20,43 @@ body {
 
 #profile, #menu {
   height: 100vh;
+}
+
+#menu {
+  padding: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#menu > div {
+  display: grid;
+  grid-template-areas: "nav-1 nav-2" "nav-3 nav-4";
+}
+
+@media (max-width: 768px) {
+  #menu {
+    padding: 0;
+  }
+
+  #menu > div {
+    grid-template-areas: "nav-1" "nav-2" "nav-3" "nav-4";
+  }
+}
+#nav-1 {
+  grid-area: "nav-1";
+}
+
+#nav-2 {
+  grid-area: "nav-2";
+}
+
+#nav-3 {
+  grid-area: "nav-3";
+}
+
+#nav-4 {
+  grid-area: "nav-4";
 }
 
 #profile {
@@ -27,7 +69,7 @@ body {
 }
 
 #profile_picture {
-  border: 2px solid #2b2a2a;
+  border: 3px solid #2b2a2a;
 }
 
 #profile_content {
@@ -49,18 +91,37 @@ body {
   margin: 10px;
 }
 
-.link {
-  font-size: 30px;
-  text-decoration: none;
+.slink {
   color: grey;
+  font-size: 30px;
 }
 
 .link:hover {
-  color: #3e3e42;
+  color: grey;
+}
+
+.link:active {
+  color: grey;
 }
 
 #facebook {
   color: red;
+}
+
+.nav-card {
+  border: 1px solid black;
+  background: #0a0a0a;
+  margin: 10px;
+  padding: 15px;
+}
+
+.nav-card h4 {
+  color: white;
+}
+
+.nav-card > h4 + p {
+  font-weight: bold;
+  color: #7272b3;
 }
 
 /*# sourceMappingURL=main.css.map */

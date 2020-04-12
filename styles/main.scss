@@ -6,6 +6,12 @@
 %network{
   font-size: 15px;
 }
+%baselink{
+    text-decoration: none;
+    color: white;
+}
+$card-bg:#0c0d0c;
+
 body{
     background: #151716;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,6 +19,43 @@ body{
 #profile, #menu{
     height: 100vh;
 }
+#menu{
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+#menu > div{
+    display: grid;
+    grid-template-areas: "nav-1 nav-2"
+                         "nav-3 nav-4";
+}
+@media (max-width:768px){
+
+    #menu{
+        padding: 0;
+    }
+    #menu > div{
+        grid-template-areas: "nav-1"
+                             "nav-2"
+                             "nav-3"
+                             "nav-4";
+    }
+}
+
+#nav-1{
+    grid-area: "nav-1";
+}
+#nav-2{
+    grid-area: "nav-2";
+}
+#nav-3{
+    grid-area: "nav-3";
+}
+#nav-4{
+    grid-area: "nav-4";
+}
+
 #profile{
     background: #0c0d0c;
     display: flex;
@@ -23,7 +66,7 @@ body{
 }
 #profile_picture{
     @extend %profile_pic;
-    border:2px solid rgb(43, 42, 42);
+    border:3px solid rgb(43, 42, 42);
 }
 #profile_content{
     color:white;
@@ -42,15 +85,36 @@ body{
 #profile_content > ul li{
     margin:10px;
 }
-.link{
-    font-size: 30px;
-    text-decoration: none;
+.slink{
     color: grey;
+    font-size: 30px;
+}
+.link{
+    @extend %baselink;
 }
 .link:hover{
-    color:rgb(62, 62, 66);
+    @extend %baselink;
+    color: grey;
+}
+.link:active{
+    @extend %baselink;
+    color: grey;
 }
 #facebook{
     @extend %network;
     color:red;
+}
+// NAV
+.nav-card{
+    border:1px solid black;
+    background: rgb(10, 10, 10);
+    margin:10px;
+    padding:15px;
+}
+.nav-card h4{
+    color:white;
+}
+.nav-card > h4 + p{
+    font-weight:bold;
+    color:rgb(114, 114, 179);
 }
