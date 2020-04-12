@@ -48,6 +48,16 @@ body{
                              "nav-3"
                              "nav-4";
     }
+    #home{
+        border-radius: 50%;
+        background: rgb(108, 108, 119);
+        left:10px;
+        top:10px;
+    }
+    #home i{
+        font-size: 2em;
+        color:black;
+    }
 }
 
 #nav-1{
@@ -142,16 +152,4 @@ body{
 }
 #home i:hover{
     color:white;
-}
-@media(max-width:768px){
-    #home{
-        border-radius: 50%;
-        background: rgb(108, 108, 119);
-        left:10px;
-        top:10px;
-    }
-    #home i{
-        font-size: 2em;
-        color:black;
-    }
 }
