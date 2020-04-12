@@ -3,6 +3,9 @@
     height: 100px;
     width: 100px;
 }
+%network{
+  font-size: 15px;
+}
 body{
     background: #151716;
     font-family: Arial, Helvetica, sans-serif;
@@ -38,4 +41,16 @@ body{
 }
 #profile_content > ul li{
     margin:10px;
+}
+.link{
+    font-size: 30px;
+    text-decoration: none;
+    color: grey;
+}
+.link:hover{
+    color:rgb(62, 62, 66);
+}
+#facebook{
+    @extend %network;
+    color:red;
 }
