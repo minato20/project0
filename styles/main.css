@@ -1,4 +1,4 @@
-#profile_picture {
+#profile_picture_home {
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -76,7 +76,7 @@ body {
   padding: 15px;
 }
 
-#profile_picture {
+#profile_picture_home {
   border: 3px solid #2b2a2a;
 }
 
