@@ -1,3 +1,48 @@
+#profile_picture {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
 
+body {
+  background: #151716;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#profile, #menu {
+  height: 100vh;
+}
+
+#profile {
+  background: #0c0d0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+#profile_picture {
+  border: 2px solid #2b2a2a;
+}
+
+#profile_content {
+  color: white;
+}
+#profile_content h2 {
+  padding: 8px 0;
+  color: silver;
+}
+
+#profile_content > ul {
+  padding: 30px 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+#profile_content > ul li {
+  margin: 10px;
+}
 
 /*# sourceMappingURL=main.css.map */
