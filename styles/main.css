@@ -34,7 +34,15 @@ body {
   grid-template-areas: "nav-1 nav-2" "nav-3 nav-4";
 }
 
+.mobile_only {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .mobile_only {
+    display: block;
+  }
+
   #menu {
     padding: 0;
   }
