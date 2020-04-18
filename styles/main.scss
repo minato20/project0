@@ -34,6 +34,30 @@ body{
 .mobile_only{
     display: none;
 }
+#navigation{
+    background: $card-bg;
+}
+#navigation ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 0 5px;
+}
+#navigation ul li{
+    padding: 5px 0 0 0;
+}
+#ipad_sep{
+    display: none;
+}
+@media(min-width:768px) and (max-width:1024px) and (min-height:1024px)
+{
+    #ipad_sep{
+        display: block;
+    }
+    .container .form-control{
+        margin:20px 0;
+        padding: 5px;
+    }
+}
 @media (max-width:768px){
 
     .mobile_only{

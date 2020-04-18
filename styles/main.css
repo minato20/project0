@@ -38,6 +38,34 @@ body {
   display: none;
 }
 
+#navigation {
+  background: #0a0a0a;
+}
+
+#navigation ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 0 5px;
+}
+
+#navigation ul li {
+  padding: 5px 0 0 0;
+}
+
+#ipad_sep {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) {
+  #ipad_sep {
+    display: block;
+  }
+
+  .container .form-control {
+    margin: 20px 0;
+    padding: 5px;
+  }
+}
 @media (max-width: 768px) {
   .mobile_only {
     display: block;
@@ -49,6 +77,18 @@ body {
 
   #menu > div {
     grid-template-areas: "nav-1" "nav-2" "nav-3" "nav-4";
+  }
+
+  #home {
+    border-radius: 50%;
+    background: #6c6c77;
+    left: 10px;
+    top: 10px;
+  }
+
+  #home i {
+    font-size: 2em;
+    color: black;
   }
 }
 #nav-1 {
@@ -153,20 +193,6 @@ body {
 
 #home i:hover {
   color: white;
-}
-
-@media (max-width: 768px) {
-  #home {
-    border-radius: 50%;
-    background: #6c6c77;
-    left: 10px;
-    top: 10px;
-  }
-
-  #home i {
-    font-size: 2em;
-    color: black;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
